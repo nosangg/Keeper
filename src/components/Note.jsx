@@ -1,16 +1,19 @@
 import React from "react";
 
-function Note(){
+// render notes using maps
+
+function Note(porps){
     return(
         <div className="note">
             <h1>
-                This is a note title.
+                {porps.title}
             </h1>
             <p>
-                This is a note content. 
+               {porps.content} 
             </p>
         </div>
     )
+    
 }
 
 export default Note;
