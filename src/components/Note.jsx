@@ -2,15 +2,17 @@ import React from "react";
 
 // render notes using maps
 
-function Note(porps){
+function Note(props){
+    console.log(props)
     return(
         <div className="note">
             <h1>
-                {porps.title}
+                {props.title}
             </h1>
             <p>
-               {porps.content} 
+               {props.content} 
             </p>
+            <button>DELETE</button>
         </div>
     )
     
