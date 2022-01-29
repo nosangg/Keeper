@@ -3,7 +3,7 @@ import React from "react";
 // render notes using maps
 
 function Note(props){
-    console.log(props)
+
     return(
         <div className="note">
             <h1>
@@ -12,7 +12,7 @@ function Note(props){
             <p>
                {props.content} 
             </p>
-            <button>DELETE</button>
+            <button onClick={()=>{props.deleteItem(props.id)}}>DELETE</button>
         </div>
     )
     
